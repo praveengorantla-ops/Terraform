@@ -1,7 +1,6 @@
 module "db" {
-  # source = "github.com/CloudTechDevOps/terraform-aws-rds" #terraform registry forked into my github
+   source = "github.com/CloudTechDevOps/terraform-aws-rds" #terraform registry forked into my github
   identifier = "demodb"
-
 engine   = "mysql"
 engine_version = "5.7"
 instance_class = "db.t3a.large"
