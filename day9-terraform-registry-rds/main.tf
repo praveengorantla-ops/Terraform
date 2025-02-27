@@ -1,4 +1,5 @@
 module "db" {
+<<<<<<< HEAD
 source     = "github.com/CloudTechDevOps/terraform-aws-rds" #terraform registry forked into my github 
   identifier = "demodb"
   engine            = "mysql"
@@ -9,6 +10,14 @@ source     = "github.com/CloudTechDevOps/terraform-aws-rds" #terraform registry 
   db_name  = "demodb"
   username = "user"
   port     = "3306"
+=======
+   source = "github.com/CloudTechDevOps/terraform-aws-rds" #terraform registry forked into my github
+  identifier = "demodb"
+engine   = "mysql"
+engine_version = "5.7"
+instance_class = "db.t3a.large"
+allocated_storage = 5
+>>>>>>> 176c7416af39c53b13be3f08892a2dd905237681
 
   iam_database_authentication_enabled = true
 
